@@ -30,6 +30,6 @@ function CategoryFilter({ cat, setCat }) {
       </form>
     </div>
   )
-}
+};
 
 export default CategoryFilter

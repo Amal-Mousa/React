@@ -28,6 +28,7 @@ function App() {
 			<section className="dishes">
 				<h2>Dishes</h2>
 				<ul className="grid">
+					{filteredDishes.length === 0 && <p>Dishes Not Found</p>}
 					{filteredDishes.map(dish => (
 						<DishList key={dish.id} name={dish.name} description={dish.description} price={dish.price} />
 					))}
